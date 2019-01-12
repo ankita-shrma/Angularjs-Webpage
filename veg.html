@@ -1,0 +1,60 @@
+<html ng-app="vegapp">
+<head>
+<title>vegvenders.in</title>
+<meta charset="utf-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="angular.js"></script>
+   <!-- <script src="angular-route.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <link rel="stylesheet" type="text/css" href="vegstyle.css">
+    <script src="vegscript.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="main">
+      <div class="container-fluid " id="hd">
+       <div class="row" id="head">
+          <div class="col col-sm-2">
+              <form>
+              <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="Search"/>
+              </div>
+              </form>
+          </div>
+        <div class="col col-sm-2 col-sm-offset-3">
+        <img src="images/Veg-Vendors-Logo.jpg" height="70px" width="200px">
+        </div>
+        <div class="col col-sm-1 col-sm-offset-4" id="user">
+        <a ui-sref="login"><span class="glyphicon glyphicon-user" id="u"></span></a>
+         <a ui-sref="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+        </div>
+    </div>
+    </div>
+    <ui-view></ui-view>
+   
+    </div>
+    <div class="footer" id="foo">
+        <div><img src="images/logo.jpg" class="img-responsive" id="flogo"></div>
+    <div class="row">
+    <div class="col col-sm-10 col-sm-offset-2" id="list">
+    <ul class="list-inline">
+    <li><a href="#">Order Tracking</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Terms and Conditions</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    </ul>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col col-sm-8 col-sm-offset-4">
+    <h4>© 2017 Veg Vendors. All Rights Reserved</h4>
+        </div>
+        </div>
+        </div>
+    </body>
+</html>

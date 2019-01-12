@@ -1,0 +1,13 @@
+<div class="container" ng-controller="greencont">
+<div class="row" id="lv">
+<div class="col col-sm-3" ng-repeat="gimg in gimgs">
+<a href="#">
+ <img ng-src="images/{{gimg.gsource}}" class="img-responsive" width="220px" height="264.3px">
+ <h4>{{gimg.gtitle}}</h4>
+    </a>
+ <h4>{{gimg.grate}}</h4>
+<hr/>
+    <a><h5>Add to cart</h5></a>
+<hr/>
+</div>
+</div>
